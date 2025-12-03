@@ -1,6 +1,6 @@
 import re
 
-def day1part1(file):
+def part1(file):
 	with open(file, "r") as input:
 		dial = 50
 		numZeroes = 0
@@ -16,7 +16,7 @@ def day1part1(file):
 				numZeroes += 1
 		print(numZeroes)
 
-def day1part2(file):
+def part2(file):
 	with open(file, "r") as input:
 		dial = 50
 		numZeroes = 0
@@ -41,5 +41,5 @@ def day1part2(file):
 
 if __name__ == "__main__":
 	file = "inputs/day1Input.txt"
-	day1part1(file)
-	day1part2(file)
+	part1(file)
+	part2(file)
