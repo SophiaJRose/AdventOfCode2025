@@ -37,7 +37,7 @@ def depth_first(tree, current, target, visited, memo):
 				if node not in visited:
 					found = depth_first(tree, node, target, visited.copy(), memo)
 					numFound += found
-			# If no paths from current to target, mark current as dead end
+			# Save number of paths found to memoization table
 			memo[current] = numFound
 			return numFound
 		else:
