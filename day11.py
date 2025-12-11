@@ -6,10 +6,7 @@ def part1(file):
 			node = line[:colon]
 			outputs = line.strip()[colon+2:].split(" ")
 			tree[node] = outputs
-		paths = []
-		dead_ends = []
-		memo = {}
-		result = depth_first(tree, "you", "out", [], memo)
+		result = depth_first(tree, "you", "out", [], {})
 		print(result)
 
 def part2(file):
